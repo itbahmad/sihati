@@ -18,7 +18,7 @@ class Config:
     BATCH_SIZE = 5  # Jumlah dokumen per batch
     
     # Model Settings
-    GEMINI_MODEL = 'gemini-pro'
+    GEMINI_MODEL = 'gemini-2.5-pro'
     TEMPERATURE = 0.1  # Lebih deterministik
     MAX_OUTPUT_TOKENS = 4096
 
