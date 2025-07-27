@@ -429,7 +429,7 @@ Target Sasaran: {'; '.join(instansi.target_sasaran)}
 
 def check_api_configuration():
     """Check API configuration and display status"""
-    api_key = os.getenv('GEMINI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     
     if not api_key:
         st.markdown("""
