@@ -488,10 +488,10 @@ def main():
     # Header
     st.markdown(f"""
     <div class="main-header">
-        <h1>🏛️ Sistem Analisis Tumpang Tindih Tugas Instansi</h1>
+        <h1>🏛️ SIHATI (Sistem Harmonisasi Kebijakan Terpadu Instansi)</h1>
         <p>Identifikasi Otomatis Duplikasi Tugas, Fungsi, dan Program Antar Instansi Pemerintah Indonesia</p>
         <p><small>✨ Multiple Files | 🤖 Multi-Model AI | 🔍 Smart Instansi Search</small></p>
-        <p><small>👤 User: itbahmad | 📅 {time.strftime('%Y-%m-%d %H:%M:%S UTC')}</small></p>
+        <p><small>👤 User: sihatiuser | 📅 {time.strftime('%Y-%m-%d %H:%M:%S UTC')}</small></p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -778,7 +778,7 @@ def analyze_documents(uploaded_files_data, doc_processor, analyzer):
         <p>📊 <strong>Total Instansi:</strong> {total_instansi}</p>
         <p>📄 <strong>Total Dokumen:</strong> {total_files}</p>
         <p>🤖 <strong>Model AI:</strong> {analyzer.model_name}</p>
-        <p>👤 <strong>User:</strong> itbahmad</p>
+        <p>👤 <strong>User:</strong> sihatiuser</p>
         <p>📅 <strong>Waktu:</strong> {time.strftime('%Y-%m-%d %H:%M:%S UTC')}</p>
     </div>
     """, unsafe_allow_html=True)
@@ -850,7 +850,7 @@ def display_results(instansi_list, overlap_analysis, model_name):
         <p><strong>Jumlah Instansi:</strong> {len(instansi_list)}</p>
         <p><strong>Total Dokumen:</strong> {sum(len(inst.dokumen_sumber) for inst in instansi_list)}</p>
         <p><strong>Waktu Analisis:</strong> {time.strftime('%Y-%m-%d %H:%M:%S UTC')}</p>
-        <p><strong>User:</strong> itbahmad</p>
+        <p><strong>User:</strong> sihatiuser</p>
     </div>
     """, unsafe_allow_html=True)
     
