@@ -3,7 +3,7 @@ import os
 
 class Config:
     # Gemini API
-    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
+    GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
     
     # OCR Settings
     TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Windows
