@@ -141,7 +141,7 @@ class InstansiData:
 class DocumentProcessor:
     def __init__(self):
         # Set Tesseract path from environment variable
-        tesseract_cmd = st.secrets('TESSERACT_CMD')
+        tesseract_cmd = os.environ.get('TESSERACT_CMD')
         if tesseract_cmd and os.path.exists(tesseract_cmd):
             pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
     
@@ -429,7 +429,7 @@ Target Sasaran: {'; '.join(instansi.target_sasaran)}
 
 def check_api_configuration():
     """Check API configuration and display status"""
-    api_key = st.secrets('GEMINI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     
     if not api_key:
         st.markdown("""
@@ -500,7 +500,7 @@ def main():
         st.stop()
     
     # Get API key from environment
-    api_key = st.secrets('GEMINI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     
     # Sidebar
     with st.sidebar:
@@ -731,7 +731,7 @@ def create_instansi_upload_section(index: int):
     
     if uploaded_files and nama_instansi:
         # Check file sizes
-        max_size = int(st.secrets('MAX_FILE_SIZE_MB', '50')) * 1024 * 1024
+        max_size = int(os.environ.get('MAX_FILE_SIZE_MB', '50')) * 1024 * 1024
         oversized_files = [f for f in uploaded_files if f.size > max_size]
         
         if oversized_files:
