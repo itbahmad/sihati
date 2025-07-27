@@ -491,6 +491,7 @@ def main():
         <h1>🏛️ SIHATI (Sistem Harmonisasi Kebijakan Terpadu Instansi)</h1>
         <p>Identifikasi Otomatis Duplikasi Tugas, Fungsi, dan Program Antar Instansi Pemerintah Indonesia</p>
         <p><small>✨ Multiple Files | 🤖 Multi-Model AI | 🔍 Smart Instansi Search</small></p>
+        <p><small>📊 <a href="https://www.canva.com/design/DAGuYKmWoYY/1AGbdEog3NWoS_fa3dfeQQ/view" target="_blank">Slide Presentasi</a> | 🎯 <a href="https://drive.google.com/file/d/1bEeBMeFqlpvHc5ep8kjXzBhF2w0E5bWV/view" target="_blank">Demo Prototype</a> | 📁 <a href="https://drive.google.com/drive/folders/1bLa7nBdNSu1krA346kt2J-oqoue5R8Pd" target="_blank">Sampel Dokumen Instansi</a></small></p>
         <p><small>👤 User: sihatiuser | 📅 {time.strftime('%Y-%m-%d %H:%M:%S UTC')}</small></p>
     </div>
     """, unsafe_allow_html=True)
