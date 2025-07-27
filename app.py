@@ -500,7 +500,7 @@ def main():
         st.stop()
     
     # Get API key from environment
-    api_key = os.getenv('GEMINI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     
     # Sidebar
     with st.sidebar:
