@@ -6,8 +6,8 @@ class Config:
     GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
     
     # OCR Settings
-    TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Windows
-    # TESSERACT_CMD = '/usr/bin/tesseract'  # Linux
+    # TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Windows
+    TESSERACT_CMD = '/usr/bin/tesseract'  # Linux
     
     # File Upload Settings
     MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
